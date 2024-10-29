@@ -1,6 +1,7 @@
 package com.iiex.currencyconverter.di
 
 import com.iiex.currencyconverter.data.remote.CurrencyApiService
+import com.iiex.currencyconverter.utils.BASE_URL
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
 import kotlinx.serialization.json.Json
 import okhttp3.MediaType
@@ -21,7 +22,7 @@ object NetworkModule {
     @Provides
     @Singleton
     fun provideRetrofit(): Retrofit = Retrofit.Builder()
-        .baseUrl("https://api.exchangeratesapi.io/v1/")
+        .baseUrl(BASE_URL)
         .addConverterFactory(json.asConverterFactory("application/json".toMediaType()))
         .build()
 

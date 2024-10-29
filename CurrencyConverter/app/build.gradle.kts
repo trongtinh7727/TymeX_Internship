@@ -81,6 +81,7 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
     implementation(libs.androidx.appcompat)
+    implementation(libs.androidx.cardview)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -104,6 +105,9 @@ dependencies {
 
     // Data Binding
     implementation("androidx.databinding:databinding-runtime:7.1.0")
+
+    implementation("androidx.cardview:cardview:1.0.0")
+
 }
 kapt {
     correctErrorTypes = true
