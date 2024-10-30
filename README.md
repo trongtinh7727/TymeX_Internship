@@ -1,54 +1,33 @@
-# Currency Converter App
+# TymeX Internship Program 2024 - Round 2: Online Test - Mobile Intern
 
-## Overview
-Currency Converter is an Android application built with Kotlin that allows users to convert between currencies using live exchange rates. The app uses the [FreeCurrencyAPI](https://freecurrencyapi.com) to fetch real-time exchange rates, and it is structured with a modular architecture for easy maintenance and scalability.
+Greetings! This repository contains my solutions for the TymeX Internship Program 2024 - Round 2 Online Test for the Mobile Intern position. Below is a brief overview of each challenge and how to navigate this repository.
 
-## Project Structure
-- **data**: Contains all data-related components.
-  - `model`: Data models representing currency exchange data.
-  - `remote`: API service definitions.
-  - `repository`: Repository to handle data operations and connect with the remote API.
-- **di**: Dependency injection setup using Hilt.
-- **ui**: User interface components.
-  - `binding`: Data binding-related components.
-  - `main`: Main screen components, including currency selection and conversion logic.
-  - `splash`: Splash screen for the initial app launch.
-- **utils**: Utility classes and helper functions.
+## Challenge 1 - Basic Mobile App (Currency Converter)
 
-### MVVM Architecture
-The app follows the MVVM architecture:
-- **Model**: Data classes and repository that handle data logic.
-- **View**: Activities, Fragments, and Composables that handle the UI.
-- **ViewModel**: Provides data to the UI and handles user interactions, keeping UI logic separate from data logic.
+### Folder Location
+`./CurrencyConverter`
 
+### Description
+This challenge involved developing a simple mobile app that serves as a **Currency Converter**.
 
-## Prerequisites
-- Android Studio (recommended version Arctic Fox or higher).
-- `local.properties` file with `EXCHANGE_API_KEY` set to your FreeCurrencyAPI key. Example:
-```
-EXCHANGE_API_KEY=your_api_key_here
-```
+- **Requirements**:
+  - Designed a user-friendly interface for currency input.
+  - Implemented currency conversion functionality between selected currencies.
+  - Displayed converted amounts clearly.
+  - Optional feature: Included a currency selector for flexibility.
 
+---
 
-## Build and Run the App
-1. Clone the repository:
- ```bash
- git clone https://github.com/your-repo/currency-converter.git
-```
-2. Open the project in Android Studio.
+## Challenge 2 - Problem-Solving
 
-3. Add your API key to the local.properties file.
+### Folder Location
+`./Challenge2`
 
-4. Sync the project to install dependencies.
+### Description
+This challenge includes two questions focused on problem-solving.
 
-5. Select a device or emulator to run the app.
+- **Problem 1**:.
+  - Folder location: `./Challenge2/Problem1`
 
-6. Click on Run to build and deploy the app.
-
-# Notes and Challenges
-API Key Management: The API key is securely loaded from the local.properties file to keep it out of source control.
-
-Network Handling: Retrofit and Kotlin Serialization handle the API requests and responses, while error handling provides feedback to the user if the network is unavailable.
-
-# Demonstration Video
-A video demonstrating the app's key features is available [here](https://youtu.be/HOclBMsuH44)
+- **Problem 2**:
+  - Folder location: `./Challenge2/Problem2`
