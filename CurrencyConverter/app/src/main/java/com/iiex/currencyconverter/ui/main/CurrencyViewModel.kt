@@ -45,7 +45,6 @@ class CurrencyViewModel @Inject constructor(
                                 },
                     onFailure = { exception -> _rate.value = Result.error(exception) }
                 )
-
             } catch (e: Exception) {
                 _rate.value = Result.error(e)
             }
